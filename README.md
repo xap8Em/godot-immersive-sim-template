@@ -1,1 +1,1 @@
-# Godot Template
+# Godot Immersive Sim Template
