@@ -53,4 +53,4 @@ func _change_current_state_to(next_state_name: StringName) -> void:
 	_current_state = next_state
 	_current_state.enter()
 
-	current_state_changed.emit(_current_state.get_name())
+	current_state_changed.emit(next_state_name)
