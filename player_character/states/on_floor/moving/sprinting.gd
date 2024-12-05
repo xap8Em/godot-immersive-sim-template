@@ -7,10 +7,10 @@ func enter() -> void:
 	_player_character.set_max_movement_speed(_player_character.MAX_SPRINT_SPEED)
 
 
-func unhandled_input(event: InputEvent) -> void:
-	super(event)
+func physics_process(delta: float) -> void:
+	super(delta)
 
-	if event.is_action_released("sprint"):
+	if not Input.is_action_pressed("sprint"):
 		exiting.emit("running")
 
 		return
