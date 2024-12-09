@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://dgtl8tk6e3x70"]
+
+[ext_resource type="Script" path="res://bullets/bullet.gd" id="1_hekfu"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j061v"]
+shading_mode = 0
+billboard_mode = 1
+
+[sub_resource type="QuadMesh" id="QuadMesh_fgcks"]
+material = SubResource("StandardMaterial3D_j061v")
+size = Vector2(0.1, 0.1)
+
+[node name="Bullet" type="Node3D"]
+script = ExtResource("1_hekfu")
+metadata/_edit_lock_ = true
+metadata/_edit_group_ = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("QuadMesh_fgcks")
+metadata/_edit_lock_ = true
+metadata/_edit_group_ = true
