@@ -2,9 +2,9 @@ class_name Main
 extends Node
 
 
+var _mouse_mode_is_captured: bool
 var _state_machine: StateMachine
 var _window_mode_is_fullscreen: bool
-var _mouse_mode_is_captured: bool
 
 
 func _init() -> void:
@@ -24,11 +24,11 @@ func _process(delta: float) -> void:
 	_state_machine.process(delta)
 
 
-func toggle_window_mode() -> void:
-	_window_mode_is_fullscreen = not _window_mode_is_fullscreen
-	DisplayServer.window_set_mode(3 * int(_window_mode_is_fullscreen))
-
-
 func toggle_mouse_mode() -> void:
 	_mouse_mode_is_captured = not _mouse_mode_is_captured
 	Input.set_mouse_mode(2 * int(_mouse_mode_is_captured))
+
+
+func toggle_window_mode() -> void:
+	_window_mode_is_fullscreen = not _window_mode_is_fullscreen
+	DisplayServer.window_set_mode(3 * int(_window_mode_is_fullscreen))

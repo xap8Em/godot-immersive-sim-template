@@ -1,8 +1,8 @@
 extends Control
 
 
-var _unformatted_info: String
 var _info_value_map: Dictionary
+var _unformatted_info: String
 
 @onready var _info_label: Label = $InfoLabel
 
