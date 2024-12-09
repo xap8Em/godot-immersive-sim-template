@@ -12,7 +12,7 @@ var _input_movement_vector: Vector2
 var _max_movement_speed: float
 var _max_jump_speed: float = sqrt(2 * Globals.get_gravity() * MAX_JUMP_HEIGHT)
 
-@onready var _head := $Head as Node3D
+@onready var _head: Node3D = $Head
 
 
 func _init() -> void:

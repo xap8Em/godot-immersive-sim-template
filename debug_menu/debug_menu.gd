@@ -4,7 +4,7 @@ extends Control
 var _unformatted_info: String
 var _info_value_map: Dictionary
 
-@onready var _info_label := $InfoLabel as Label
+@onready var _info_label: Label = $InfoLabel
 
 
 func _ready() -> void:
