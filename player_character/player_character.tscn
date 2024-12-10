@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://b50fyxwe8dm4t"]
+[gd_scene load_steps=4 format=3 uid="uid://b50fyxwe8dm4t"]
 
 [ext_resource type="Script" path="res://player_character/player_character.gd" id="1_djh15"]
+[ext_resource type="PackedScene" uid="uid://1d5ogmi4qgxa" path="res://pistols/pistol.tscn" id="2_6g8vq"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_fuauk"]
 radius = 0.2
@@ -29,6 +30,8 @@ metadata/_edit_group_ = true
 [node name="Camera3D" type="Camera3D" parent="Head/Eyes"]
 metadata/_edit_lock_ = true
 metadata/_edit_group_ = true
+
+[node name="Pistol" parent="Head/Eyes" instance=ExtResource("2_6g8vq")]
 
 [node name="ColorRect" type="ColorRect" parent="."]
 anchors_preset = 8

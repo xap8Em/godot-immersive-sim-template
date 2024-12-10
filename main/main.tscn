@@ -9,4 +9,4 @@ script = ExtResource("1_aw1uw")
 
 [node name="DebugRoom" parent="." instance=ExtResource("2_otvj7")]
 
-[node name="PlayerCharacter" parent="." instance=ExtResource("3_mp5ml")]
+[node name="PlayerCharacter" parent="DebugRoom" instance=ExtResource("3_mp5ml")]
