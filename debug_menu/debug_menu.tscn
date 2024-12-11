@@ -20,7 +20,10 @@ offset_right = 40.0
 offset_bottom = 23.0
 text = "Player Character
 	State: {player_character/state}
-	Horizontal Speed: {player_character/horizontal_speed}"
+	Horizontal Speed: {player_character/horizontal_speed}
+Pistol
+	State: {pistol/state}
+	Ammo Count: {pistol/loaded_ammunition_count}/{pistol/magazine_capacity}"
 tab_stops = PackedFloat32Array(16)
 metadata/_edit_lock_ = true
 metadata/_edit_group_ = true
