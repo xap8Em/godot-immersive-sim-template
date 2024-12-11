@@ -10,3 +10,5 @@ metadata/_edit_group_ = true
 [node name="Muzzle" type="Node3D" parent="."]
 metadata/_edit_lock_ = true
 metadata/_edit_group_ = true
+
+[node name="Timer" type="Timer" parent="."]

@@ -15,6 +15,7 @@ var _muzzle_velocity: float = 100.0
 var _state: State
 
 @onready var _muzzle: Node3D = $Muzzle
+@onready var _timer: Timer = $Timer
 
 
 func _init() -> void:
@@ -32,6 +33,10 @@ func _init() -> void:
 	_state = State.STATE_IDLE
 
 	DebugMenu.set_info_value("pistol/state", "idle")
+
+
+func _ready() -> void:
+	_timer.set_one_shot(true)
 
 
 func _unhandled_input(event: InputEvent) -> void:
@@ -69,6 +74,10 @@ func _unhandled_input(event: InputEvent) -> void:
 			DebugMenu.set_info_value("pistol/loaded_ammunition_count",
 					_loaded_ammunition_count)
 
+			_timer.start(0.2)
+
+			await _timer.timeout
+
 			_state = State.STATE_IDLE
 
 			DebugMenu.set_info_value("pistol/state", "idle")
@@ -80,6 +89,10 @@ func _reload() -> void:
 	_state = State.STATE_RELOADING
 
 	DebugMenu.set_info_value("pistol/state", "reloading")
+
+	_timer.start(2.0)
+
+	await _timer.timeout
 
 	_loaded_ammunition_count = _magazine_capacity
 
