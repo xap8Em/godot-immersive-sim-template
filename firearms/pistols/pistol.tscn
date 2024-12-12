@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=3 uid="uid://468d8h6774sb"]
+
+[ext_resource type="Script" path="res://firearms/pistols/pistol.gd" id="1_48v71"]
+[ext_resource type="PackedScene" uid="uid://v62hbw2hjtg" path="res://firearms/firearm.tscn" id="1_bbfcr"]
+
+[node name="Pistol" instance=ExtResource("1_bbfcr")]
+script = ExtResource("1_48v71")

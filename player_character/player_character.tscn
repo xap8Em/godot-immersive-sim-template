@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://b50fyxwe8dm4t"]
 
 [ext_resource type="Script" path="res://player_character/player_character.gd" id="1_djh15"]
-[ext_resource type="PackedScene" uid="uid://1d5ogmi4qgxa" path="res://pistols/pistol.tscn" id="2_6g8vq"]
+[ext_resource type="PackedScene" uid="uid://468d8h6774sb" path="res://firearms/pistols/pistol.tscn" id="2_6g8vq"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_fuauk"]
 radius = 0.2
