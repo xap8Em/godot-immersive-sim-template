@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://v62hbw2hjtg"]
+
+[ext_resource type="Script" path="res://firearms/firearm.gd" id="1_xk03f"]
+
+[node name="Firearm" type="Node3D"]
+script = ExtResource("1_xk03f")
+metadata/_edit_lock_ = true
+metadata/_edit_group_ = true
+
+[node name="Muzzle" type="Node3D" parent="."]
+metadata/_edit_lock_ = true
+metadata/_edit_group_ = true
+
+[node name="Timer" type="Timer" parent="."]
